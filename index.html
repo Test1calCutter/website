@@ -1,0 +1,225 @@
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="http://example.com/favicon.png">
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+            * {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+            }
+
+            .body {
+                background-color: #141414;
+            }
+            
+            .navbar {
+                width: 100%;
+                height: 100px;
+                background: #101010;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+            }
+
+            .navbar .title {
+                font-size: 24px;
+                font-weight: 900;
+                margin-left: 150px;
+                transition: .5s all;
+            }
+
+            .p {
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+                text-align: left;
+                margin-left: 5.5%;
+            }
+
+            .p2 {
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            .p3 {
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+                text-align: right;
+                margin-right: 50px;
+            }
+
+            .jh1 {
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                font-size: 50px;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 150px;
+                margin-right: 1500;
+                width: 1060px;
+                
+            }
+            
+            .jh2 {
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                font-size: 50px;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 200px;
+                margin-left: 60.3%;
+                width: 1060px;
+                
+            }
+
+            .footer {
+                margin-top: 50px;
+            }
+            .h1 {
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                font-size: 50px;
+                font-weight: 600;
+                margin-top: 125px;
+                width: 1060px;                
+            }
+
+            a {
+              color: inherit;
+              text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+              transition: text-decoration-color 300ms;
+            }
+            
+            a:hover {
+              text-decoration-color: rgba(255, 255, 255, 1);
+            }
+            
+            .wrapper {
+              min-height: 100vh;
+              width: 100%;
+              max-width: 50rem;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+            }
+
+            
+.container1{
+  width: 50%;
+  margin: 50 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: black;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: rgb(255, 255, 255);
+}
+.bar.back::before{
+  background-color: #ffffff;
+}
+
+.bar.learning::before{
+  width: calc(68% - 10px);
+}
+.bar.basic::before{
+  width: calc(89% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(45% - 10px);
+}
+.bar.expert::before{
+  width: calc(6% - 10px);
+}
+
+.be {
+    color: white;
+}
+        </style>
+    </head>
+    <body class="body">
+    
+
+        <div class="navbar">
+            <h1 class="title w3-container w3-center w3-animate-left">VeryAppropriateName</h1>
+        </div>
+        
+        <div>
+            <h1 class="jh1 w3-container w3-center w3-animate-left">Hello, I'm VeryAppropriateName</h1>
+            <p class="p w3-container w3-animate-left">I code Discord Bots as a Hobby.<br>I also make/remake Websites when I'm bored.<br>Helper @ <a href="https://discord.gg/html/" class="a"><u>discord.gg/html</u></a></p>
+        </div>
+
+        <div>
+            <h1 class="jh2 w3-container w3-center w3-animate-right">Discord Bots</h1>
+            <p class="p3 w3-container w3-animate-right">I code Discord Bots with nextcord (Python)<br>I started about two years ago!</p>
+        </div>
+
+        <div class="container1">
+            <h1 class="h1 w3-container w3-center w3-animate-right skill">My Skill Set</h1>
+            <div class="bar learning" data-skill="HTML"><span class="be">68%</span></div>
+            <div class="bar back basic" data-skill="Python"><span class="be">89%</span></div>
+            <div class="bar back intermediate" data-skill="CSS"><span class="be">60%</span></div>
+            <div class="bar front advanced" data-skill="LUA"><span class="be">45%</span></div>
+            <div class="bar front expert" data-skill="JS"><span class="be">6%</span></div>
+        </div>
+
+        <footer>
+            <p class="p2 footer w3-container w3-center w3-animate-left">Copyright VeryAppropriateName - 2022</p>
+        </footer>
+    </body>
+</html>
